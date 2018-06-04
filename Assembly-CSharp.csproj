@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectGuid>{7DD78ECC-9B52-A002-E6C5-2530404DDF51}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_2_0;UNITY_2017_2;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\_Scripts\ContextInstallers\SceneContextInstaller.cs" />
+    <Compile Include="Assets\_Scripts\Enums\Enums.cs" />
+    <Compile Include="Assets\_Scripts\Managers\SpawnManager.cs" />
+    <Compile Include="Assets\_Scripts\Models\SceneModel.cs" />
+    <Compile Include="Assets\_Scripts\MonoBehaviours\Actor.cs" />
+    <Compile Include="Assets\_Scripts\MonoBehaviours\CanvasTarget.cs" />
+    <Compile Include="Assets\_Scripts\MonoBehaviours\DestroyArea.cs" />
+    <Compile Include="Assets\_Scripts\Signals\SignalItemDrag.cs" />
+    <Compile Include="Assets\_Scripts\Signals\SignalItemDragBegin.cs" />
+    <Compile Include="Assets\_Scripts\Signals\SignalItemDragEnd.cs" />
+    <Compile Include="Assets\_Scripts\UI\Contexts\ActorUIContext.cs" />
+    <Compile Include="Assets\_Scripts\UI\Contexts\SceneUIContext.cs" />
+    <Compile Include="Assets\_Scripts\Utils\AsyncProcessor.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Examples\Collection\CollectionExampleContext.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Examples\Collection\CollectionExampleItemContext.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Examples\ContextProperty\ContextPropertyContext.cs.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Examples\ContextProperty\ContextPropertyItemContext.cs.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Examples\EnumEqualityCheck\DropDownUnity.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Examples\EnumEqualityCheck\EnumEqualityCheckContext.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Examples\EnumEqualityCheck\TestEnum.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Examples\InputFieldGetter\InputFieldGetterContext.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Examples\InputFieldGetter\MessageContext.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Examples\LabelSetter\LabelSetterContext.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Examples\StringToUpperFormatter\StringToUpperFormatter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Core\Data\Collection.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Core\Data\Context.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Core\Data\DataDictionary.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Core\Data\DataTrigger.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Core\Data\Property.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Core\Presentation\ContextHolder.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Core\Presentation\ContextNode.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Core\Presentation\DataBinding.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Core\Presentation\DataBindingOperator.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Core\Presentation\DataBindingType.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Core\Presentation\DataProvider.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Core\Presentation\IContextOperator.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Core\Presentation\MasterPath.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Core\Utils\AssemblyUtils.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Core\Utils\ContextMemberFilter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Core\Utils\ContextPathAttribute.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Core\Utils\ContextTypeAttribute.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Core\Utils\EnumExtensions.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Core\Utils\ReflectionUtils.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Core\Utils\SystemExtensions.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Core\Utils\TypeSelectionAttribute.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Core\Utils\UnityUtils.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Commands\Command.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Diagnostics\ContextHolderInitializer.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Checks\ComparisonCheck.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Checks\EqualityCheck.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Checks\IsSetCheck.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Converters\DataConverter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Converters\Texture2DToSpriteConverter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Formatters\ConditionalFormatter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Formatters\DurationFormatter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Formatters\FallbackValueFormatter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Formatters\PrependSignFormatter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Formatters\SmoothCollectionChangesFormatter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Formatters\StringFormatter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Formatters\StringToLowerFormatter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Formatters\StringToUpperFormatter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Getters\ComponentSingleGetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Getters\ContextGetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Getters\EnumGetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Getters\TransformPositionProvider.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Loaders\SpriteLoader.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Loaders\TextAssetLoader.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Lookups\CollectionLookup.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Lookups\CollectionRangeLookup.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Lookups\DictionaryLookup.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Objects\BooleanObject.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Objects\ColorObject.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Objects\NumberObject.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Operations\ArithmeticOperation.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Operations\GameObjectMapping.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Operations\InvertBoolOperation.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Operations\LogicalBoolOperation.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Operations\RoundToNearestOperation.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Operations\TweenOperation.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Smoothener\FloatSmoothener.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Smoothener\LongSmoothener.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Switches\BooleanSwitch.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Switches\NumberRangeSwitch.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Switches\NumberSwitch.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Switches\RangeOption.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Switches\RangeSwitch.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Providers\Switches\SwitchOption.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Setters\ActiveSetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Setters\AnimatorBooleanSetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Setters\AnimatorParameterSetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Setters\AnimatorSpeedSetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Setters\AnimatorTriggerSetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Setters\BehaviourEnabledSetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Setters\ComponentSingleSetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Setters\ContextHolderContextSetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Setters\GameObjectItemSetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Setters\GameObjectItemsSetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Setters\GameObjectSingleSetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Setters\ItemSetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Setters\ItemsSetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Setters\LocalPositionSetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Setters\PositionSetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Setters\Setter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Setters\SingleSetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Setters\SlotItemsSetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Setters\SmoothSlotItemsSetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Setters\SpriteRendererSpriteSetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\Foundation\Triggers\UnityEventTrigger.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\UI\Unity\Commands\BeginDragCommand.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\UI\Unity\Commands\ButtonClickCommand.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\UI\Unity\Commands\DragCommand.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\UI\Unity\Commands\DropCommand.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\UI\Unity\Commands\EndDragCommand.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\UI\Unity\Commands\EventTriggerCommand.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\UI\Unity\Commands\UnityEventCommand.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\UI\Unity\Getters\InputFieldGetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\UI\Unity\Getters\SliderValueGetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\UI\Unity\Getters\ToggleIsOnGetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\UI\Unity\Providers\MaterialInstanceFormatter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\UI\Unity\Setters\CanvasGroupInteractableSetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\UI\Unity\Setters\CanvasSortingOrderSetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\UI\Unity\Setters\GraphicColorSetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\UI\Unity\Setters\ImageFillAmountSetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\UI\Unity\Setters\ImageFillAmountSmoothSetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\UI\Unity\Setters\ImageMaterialSetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\UI\Unity\Setters\ImageSpriteSetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\UI\Unity\Setters\InputFieldTextSetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\UI\Unity\Setters\LayoutGroupItemsSetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\UI\Unity\Setters\SelectableInteractableSetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\UI\Unity\Setters\SliderValueSetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\UI\Unity\Setters\SmoothLayoutGroupItemsSetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\UI\Unity\Setters\TextTextSetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Scripts\UI\Unity\Setters\ToggleIsOnSetter.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Tests\ConstantDataProvider.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Tests\ConstantFloatProvider.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Tests\ConstantIntProvider.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Tests\ProviderValueCaster.cs" />
+    <Compile Include="Assets\ImportedAssets\Slash.Unity.DataBind\Tests\ProviderValueCasterBool.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\ArgConditionCopyNonLazyBinder.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\ArgNonLazyBinder.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\ConcreteBinders\ConcreteBinderGeneric.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\ConcreteBinders\ConcreteBinderNonGeneric.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\ConcreteBinders\ConcreteIdBinderGeneric.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\ConcreteBinders\ConcreteIdBinderNonGeneric.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\ConditionCopyNonLazyBinder.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Conventions\ConventionAssemblySelectionBinder.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Conventions\ConventionBindInfo.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Conventions\ConventionFilterTypesBinder.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Conventions\ConventionSelectTypesBinder.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\CopyNonLazyBinder.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Factory\FactoryFromBinder\FactoryFromBinder0.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Factory\FactoryFromBinder\FactoryFromBinder1.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Factory\FactoryFromBinder\FactoryFromBinder2.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Factory\FactoryFromBinder\FactoryFromBinder3.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Factory\FactoryFromBinder\FactoryFromBinder4.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Factory\FactoryFromBinder\FactoryFromBinder5.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Factory\FactoryFromBinder\SubContainerBinder\FactorySubContainerBinder0.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Factory\FactoryFromBinder\SubContainerBinder\FactorySubContainerBinder1.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Factory\FactoryFromBinder\SubContainerBinder\FactorySubContainerBinder2.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Factory\FactoryFromBinder\SubContainerBinder\FactorySubContainerBinder3.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Factory\FactoryFromBinder\SubContainerBinder\FactorySubContainerBinder4.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Factory\FactoryFromBinder\SubContainerBinder\FactorySubContainerBinder5.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Factory\FactoryFromBinder\SubContainerBinder\FactorySubContainerBinderBase.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Factory\FactoryFromBinder\SubContainerBinder\FactorySubContainerBinderWithParams.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Factory\FactoryFromBinderBase.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Factory\FactoryToChoiceBinder\FactoryToChoiceBinder0.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Factory\FactoryToChoiceBinder\FactoryToChoiceBinder1.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Factory\FactoryToChoiceBinder\FactoryToChoiceBinder2.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Factory\FactoryToChoiceBinder\FactoryToChoiceBinder3.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Factory\FactoryToChoiceBinder\FactoryToChoiceBinder4.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Factory\FactoryToChoiceBinder\FactoryToChoiceBinder5.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Factory\FactoryToChoiceIdBinder\FactoryToChoiceIdBinder0.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Factory\FactoryToChoiceIdBinder\FactoryToChoiceIdBinder1.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Factory\FactoryToChoiceIdBinder\FactoryToChoiceIdBinder2.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Factory\FactoryToChoiceIdBinder\FactoryToChoiceIdBinder3.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Factory\FactoryToChoiceIdBinder\FactoryToChoiceIdBinder4.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Factory\FactoryToChoiceIdBinder\FactoryToChoiceIdBinder5.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Factory\PlaceholderFactoryBindingFinalizer.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Factory\Pooling\MemoryPoolBindingFinalizer.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Factory\Pooling\MemoryPoolExpandBinder.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\Factory\Pooling\MemoryPoolInitialSizeBinder.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\FromBinders\FromBinder.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\FromBinders\FromBinderGeneric.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\FromBinders\FromBinderNonGeneric.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\GameObject\NameTransformConditionCopyNonLazyBinder.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\GameObject\NameTransformScopeArgConditionCopyNonLazyBinder.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\GameObject\NameTransformScopeArgNonLazyBinder.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\GameObject\NameTransformScopeConditionCopyNonLazyBinder.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\GameObject\TransformConditionCopyNonLazyBinder.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\GameObject\TransformScopeArgConditionCopyNonLazyBinder.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\GameObject\TransformScopeArgNonLazyBinder.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\GameObject\TransformScopeConditionCopyNonLazyBinder.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\IdBinder.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\IdScopeConditionCopyNonLazyBinder.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\NonLazyBinder.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\ScopeArgConditionCopyNonLazyBinder.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\ScopeArgNonLazyBinder.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\ScopeConditionCopyNonLazyBinder.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\ScopeNonLazyBinder.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Binders\SubContainerBinder.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\BindInfo\BindInfo.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\BindInfo\FactoryBindInfo.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\BindInfo\GameObjectCreationParameters.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\BindInfo\MemoryPoolBindInfo.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\BindingUtil.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Finalizers\BindFinalizerWrapper.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Finalizers\IBindingFinalizer.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Finalizers\NullBindingFinalizer.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Finalizers\PrefabBindingFinalizer.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Finalizers\PrefabResourceBindingFinalizer.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Finalizers\ProviderBindingFinalizer.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Finalizers\ScopableBindingFinalizer.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Finalizers\SingleProviderBindingFinalizer.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Finalizers\SubContainerInstallerBindingFinalizer.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Finalizers\SubContainerMethodBindingFinalizer.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Finalizers\SubContainerPrefabBindingFinalizer.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Binding\Finalizers\SubContainerPrefabResourceBindingFinalizer.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Factories\Factory.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Factories\FactoryProviderWrapper.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Factories\GameObjectFactory.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Factories\IFactory.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Factories\KeyedFactory.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Factories\PlaceholderFactory.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Factories\Pooling\IMemoryPool.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Factories\Pooling\MemoryPool.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Factories\Pooling\MemoryPoolBase.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Factories\Pooling\MonoMemoryPool.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Factories\PrefabFactory.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Injection\InjectableInfo.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Injection\InjectContext.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Injection\InjectUtil.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Injection\Lazy.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Install\Contexts\Context.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Install\Contexts\GameObjectContext.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Install\Contexts\ProjectContext.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Install\Contexts\RunnableContext.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Install\Contexts\SceneContext.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Install\Contexts\SceneDecoratorContext.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Install\Contexts\StaticContext.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Install\IInstaller.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Install\Installer.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Install\InstallerBase.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Install\MonoInstaller.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Install\MonoInstallerBase.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Install\ScriptableObjectInstaller.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Install\ScriptableObjectInstallerBase.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Install\ZenjectBinding.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Internal\Assert.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Internal\Func.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Internal\LinqExtensions.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Internal\Log.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Internal\MiscExtensions.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Internal\PreserveAttribute.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Internal\ReflectionUtil.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Internal\TypeExtensions.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Internal\ValuePair.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Main\BindingId.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Main\DiContainer.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Main\IInstantiator.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Main\LazyInstanceInjector.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\CachedProvider.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\ComponentProviders\AddToGameObjectComponentProviders\AddToCurrentGameObjectComponentProvider.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\ComponentProviders\AddToGameObjectComponentProviders\AddToExistingGameObjectComponentProvider.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\ComponentProviders\AddToGameObjectComponentProviders\AddToGameObjectComponentProviderBase.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\ComponentProviders\AddToGameObjectComponentProviders\AddToNewGameObjectComponentProvider.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\ComponentProviders\GetFromPrefabComponentProvider.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\ComponentProviders\InstantiateOnPrefabComponentProvider.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\FactoryProvider.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\GameObjectProviders\EmptyGameObjectProvider.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\GameObjectProviders\PrefabGameObjectProvider.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\GetterProvider.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\IFactoryResolveProvider.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\InstanceProvider.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\IProvider.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\IProviderExtensions.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\MethodProvider.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\MethodProviderMultiple.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\MethodProviderSimple.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\MethodProviderUntyped.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\MethodProviderWithContainer.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\PrefabCreators\IPrefabInstantiator.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\PrefabCreators\PrefabInstantiator.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\PrefabCreators\PrefabInstantiatorCached.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\PrefabProviders\IPrefabProvider.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\PrefabProviders\PrefabProvider.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\PrefabProviders\PrefabProviderResource.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\ProviderUtil.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\ResolveProvider.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\ResourceProvider.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\ScriptableObjectResourceProvider.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\Singleton\Prefab\PrefabResourceSingletonProviderCreator.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\Singleton\Prefab\PrefabSingletonProviderCreator.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\Singleton\SingletonId.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\Singleton\SingletonImplIds.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\Singleton\SingletonMarkRegistry.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\Singleton\SingletonProviderCreator.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\Singleton\SingletonTypes.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\Singleton\Standard\StandardSingletonDeclaration.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\Singleton\Standard\StandardSingletonProviderCreator.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\Singleton\SubContainer\SubContainerSingletonProviderCreatorByInstaller.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\Singleton\SubContainer\SubContainerSingletonProviderCreatorByMethod.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\Singleton\SubContainer\SubContainerSingletonProviderCreatorByNewPrefab.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\Singleton\SubContainer\SubContainerSingletonProviderCreatorByNewPrefabResource.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\SubContainerCreators\ISubContainerCreator.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\SubContainerCreators\SubContainerCreatorByInstaller.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\SubContainerCreators\SubContainerCreatorByMethod.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\SubContainerCreators\SubContainerCreatorByNewPrefab.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\SubContainerCreators\SubContainerCreatorByNewPrefabDynamicContext.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\SubContainerCreators\SubContainerCreatorByNewPrefabWithParams.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\SubContainerCreators\SubContainerCreatorCached.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\SubContainerDependencyProvider.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\TransientProvider.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Providers\UntypedFactoryProvider.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Runtime\AnimatorInterfaces\AnimatorIkHandlerManager.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Runtime\AnimatorInterfaces\AnimatorInstaller.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Runtime\AnimatorInterfaces\AnimatorMoveHandlerManager.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Runtime\AnimatorInterfaces\IAnimatorIkHandler.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Runtime\AnimatorInterfaces\IAnimatorMoveHandler.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Runtime\DisposableManager.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Runtime\GuiRenderableManager.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Runtime\GuiRenderer.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Runtime\InitializableManager.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Runtime\Kernels\DefaultGameObjectKernel.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Runtime\Kernels\Kernel.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Runtime\Kernels\MonoKernel.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Runtime\Kernels\ProjectKernel.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Runtime\Kernels\SceneKernel.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Runtime\SceneContextRegistry.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Runtime\SceneContextRegistryAdderAndRemover.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Runtime\TaskUpdater.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Runtime\TickableManager.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Signals\InstanceMethodSignalHandler.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Signals\ISignalHandler.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Signals\Signal0.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Signals\Signal1.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Signals\Signal2.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Signals\Signal3.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Signals\Signal4.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Signals\SignalBase.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Signals\SignalBinder.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Signals\SignalExtensions.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Signals\SignalFromBinder.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Signals\SignalHandlerBase.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Signals\SignalHandlerBinder.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Signals\SignalManager.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Signals\StaticMethodSignalHandler.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Signals\StaticMethodWithInstanceSignalHandler.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Usage\IGuiRenderable.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Usage\IInitializable.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Usage\ILateDisposable.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Usage\InjectAttribute.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Usage\InjectAttributeBase.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Usage\InjectLocalAttribute.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Usage\InjectOptionalAttribute.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Usage\InjectSources.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Usage\ITickable.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Usage\ZenjectAllowDuringValidationAttribute.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Util\ActionInstaller.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Util\ExecutionOrderInstaller.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Util\PoolCleanupChecker.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Util\ProfileBlock.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Util\TypeAnalyzer.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Util\UnityUtil.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Util\ValidationUtil.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Util\ZenAutoInjecter.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Util\ZenjectException.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Util\ZenjectSceneLoader.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Util\ZenjectTypeInfo.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Util\ZenUtilInternal.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Validation\IValidatable.cs" />
+    <Compile Include="Assets\ImportedAssets\Zenject\Source\Validation\ValidationMarker.cs" />
+    <None Include="Assets\ImportedAssets\Slash.Unity.DataBind\Readme.txt" />
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>D:\TestProject\ProjectCodeSamples\Library\resharper-unity-libs\nunit3.5.0\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Timeline">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIAutomation">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GoogleAudioSpatializer">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>C:/Users/vetcat/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@1.0.1/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>C:/Users/vetcat/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@1.0.1/UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>C:/Program Files/Unity/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>C:/Program Files/Unity/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>C:/Program Files/Unity/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>C:/Program Files/Unity/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
